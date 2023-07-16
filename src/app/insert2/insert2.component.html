@@ -1,0 +1,58 @@
+
+
+<app-m1></app-m1>
+<body id="p">
+
+<form #insertForm="ngForm" (ngSubmit)="Insert(insertForm)">
+    <div class="message">
+<div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+<div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+</div>
+<div class="para">
+<label>ID_NO: </label>
+&nbsp;
+&nbsp;
+<input type="text" name="ID_NO" required   #ID_NO="ngModel" ngModel>
+<br/>
+<span *ngIf="ID_NO.invalid && ID_NO.touched" style="color:red">Please Enter ID_NO</span>
+<br/>
+<label>Name: </label>
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="text"  required  name="Name" #Name="ngModel" ngModel>
+<br/>
+<span *ngIf="Name.invalid && Name.touched" style="color:red">Please Enter Name</span>
+<br/>
+<label>Frequency: </label>
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="text"  required  name="Frequency" #Frequency="ngModel" ngModel>
+<br/>
+<span *ngIf="Frequency.invalid && Frequency.touched" style="color:red">Please Enter Frequency</span>
+<br/>
+<label>Ph_NO: </label>
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="tel"  required  name="Ph_NO"  #Ph_NO="ngModel" ngModel>
+<br/>
+<span *ngIf="Ph_NO.invalid && Ph_NO.touched" style="color:red">Please Enter PhoneNumber</span>
+<br/>
+
+<label>City: </label>
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="text"  required  name="City" #City="ngModel" ngModel>
+<br/>
+<span *ngIf="City.invalid && City.touched" style="color:red">Please Enter ur City</span>
+<br/>
+
+<div class="val">
+<input type="submit" value="Insert" class="btn btn-success my-2"  [disabled]="insertForm.invalid">&nbsp;&nbsp;
+
+</div>
+</div>
+</form>

@@ -1,0 +1,16 @@
+
+<app-m1></app-m1>
+<body id="p">
+<form>
+    <div class="message">
+        <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+        <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+        </div>
+    <div class="para">
+    <input type="text" name="ID_NO"  [(ngModel)]="User.ID_NO">
+    <br/>
+    <br/>
+    <br/>
+    <input type="submit" value="Delete" class="btn btn-danger" (click)="Delete()">&nbsp;&nbsp;
+    </div>
+</form>

@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .column {
+    float: left;
+    width: 32.33%;
+    padding: 4px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

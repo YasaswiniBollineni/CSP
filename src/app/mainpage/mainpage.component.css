@@ -1,0 +1,197 @@
+
+.body {
+    background-image: url("https://img.freepik.com/premium-photo/food-packaging-yellow-background-with-copy-space_168091-327.jpg");
+    background-repeat: no-repeat;
+    
+    
+    background-size:100% 100%;
+    background-attachment:local;
+    height: 750px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  
+  
+  .center {
+        display: block;
+        margin-left: auto;
+        margin-right: 70px;
+        width: 77%;
+        height: 45%;
+        float:left;
+        align-content: center;
+        padding-right: 80px;
+        justify-content: center;
+      }
+
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(6, 6, 17);
+    padding-top: 10px;
+    font-weight: bolder;
+}
+h5{
+   font-size: 40px; 
+   padding-top: 1px;
+   padding-left:250px ;
+   color: rgb(3, 3, 14);
+   font-weight: bolder;
+}
+img{
+    padding-top: 2px;
+    padding-left:600px;
+}
+h2{
+    padding-top: 5px;
+    font-weight: bold;
+    color: rgb(2, 2, 14);
+    font-size: 23px;
+    text-align: center;
+}
+h3{
+    padding-top:2px;
+    font-weight: bold;
+    color: blue;
+    font-size: 23px;
+    text-align: center;
+}
+h4{
+    padding-top: 2px;
+    font-weight: bold;
+    color: blue;
+    font-size: 23px;
+    text-align: center;
+}
+
+
+.example-label {
+    display: table-cell;
+    font-size: 20px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+.example-button-row {
+    padding-left: 10px;
+    display: table-cell;
+    max-width: 600px;
+    float:right;
+    background-color:lightcoral;
+    padding:5px;
+    border:2px solid black;
+    padding-right: 40px;
+  }
+  .example-button-row1{
+    padding-left: 10px;
+    display: table-cell;
+    max-width: 600px;
+    float:right;
+    background-color:blue;
+    padding:5px; 
+    border:2px solid black;
+    padding-right: 40px;
+    
+  }
+  
+  .background-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: scroll;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideAnimation 10s infinite;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+    }
+    53% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
+  .fade-in {
+    position: relative;
+    height: 100px;
+  }
+  
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade-in-animation 5s infinite;
+  }
+  
+  @keyframes fade-in-animation {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

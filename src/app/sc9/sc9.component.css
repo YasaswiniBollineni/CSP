@@ -1,0 +1,22 @@
+.image-container {
+    display: flex;
+    height: 90%;
+    width:100%
+  }
+  
+  .image-container img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+  }
+  .images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .images-container img {
+    flex: 1;
+    max-width: 60%;
+    height: auto;
+  }

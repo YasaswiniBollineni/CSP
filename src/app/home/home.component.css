@@ -1,0 +1,214 @@
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .front {
+  font-size: 40px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #30381f;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .boxplace
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+    
+   
+    
+    .overlay {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #2f302d;
+      overflow: hidden;
+      width: 100%;
+      height:0;
+      transition: .5s ease;
+    }
+    
+    .container:hover .overlay {
+      bottom: 0;
+      height: 100%;
+    }
+    
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  .a1{
+      text-align: right;
+      font-size: 50px;
+      margin-bottom: 0.6cm;
+      position:static;
+      color:cornflowerblue;
+      margin-right: 1cm;
+      margin-top: 2.5cm;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  .a2{
+      text-align: right;
+      font-size: 80px;
+      color:cornflowerblue;
+      position: static;
+      margin-right: 1.9cm;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .a3{
+      text-align: right;
+      font-size: 50px;
+      color:cornflowerblue;
+      position: static;
+      margin-right: 1cm;
+      margin-top: 0.7cm;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  .g {
+      
+      text-align:left;
+      display:block;
+      
+      
+      margin-right: 4.5cm;
+  
+      float:right;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:yellowgreen;
+      
+      
+      
+    }
+    .gh
+    {
+      margin-top: 2cm;
+    }
+    .r
+    {
+      margin-left: 2cm;
+      margin-top: 1cm;
+      color: cornflowerblue;
+      font-size: 20px;
+    }
+    
+  .r1{
+      
+      margin-left: 2cm;
+      color: cornflowerblue;
+      font-size: 20px;
+  }
+  .g1{
+      
+      text-align:left;
+      display:block;
+      margin-top: 1cm;
+      margin-left: 2cm;
+      
+  
+      float:left;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:darsalmon;
+  }
+  g2{
+      text-align:left;
+      
+      display: block;
+      margin-left: 20cm;
+      margin-right:5cm;
+      width: 50%;
+  }
+  .r3{
+      width: 500px;
+      height:500px;
+      margin-left: 2cm;
+      margin-right: 4cm;
+  }
+  .r4{
+      font-size: 30px;
+      color:cornflowerblue;
+      position: static;
+      margin-left: 2cm;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+  .r5{
+      margin-left: 2cm;
+      margin-right: 2cm;
+      color:yellowgreen;
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .img
+  {
+     height: 300;
+     width: 300; 
+  }
+  
+  
+  @keyframes slidy {
+      0% { left: 0%; }
+      20% { left: 0%; }
+      25% { left: -100%; }
+      45% { left: -100%; }
+      50% { left: -200%; }
+      70% { left: -200%; }
+      75% { left: -300%; }
+      95% { left: -300%; }
+      100% { left: -400%; }
+      }
+      
+      body { margin: 0; } 
+      div#slider { overflow: hidden; }
+      div#slider figure img { width: 20%; float: left; }
+      div#slider figure { 
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 10s slidy infinite; 
+      }
+
+      

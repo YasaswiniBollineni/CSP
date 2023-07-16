@@ -1,0 +1,38 @@
+
+<app-m1></app-m1>
+<body id="p">
+<form>
+    <br/>
+    <div class="message">
+        <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+        <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+        </div>
+    <div class="para">
+    <input type="text"  name="ID_NO" [(ngModel)]="User.ID_NO">&nbsp;
+    <button type="submit" value="Read" class="btn btn-success my-2" (click)="Read()">Read</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="data">
+    <div *ngIf="canShowData">
+    <label>ID_NO:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="ID_NO"  [(ngModel)]="User.ID_NO"><br/><br/>
+
+    <label>Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="Name"  [(ngModel)]="User.Name"><br/><br/>
+
+    <label>Disease:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="Disease"  [(ngModel)]="User.Disease"><br/><br/>
+
+    <label>Ph_NO:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="Ph_NO"  [(ngModel)]="User.Ph_NO"><br/><br/>
+
+    <label>Mail_ID:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="Mail_ID"  [(ngModel)]="User.Mail_ID"><br/><br/>
+
+<label>City:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="City"  [(ngModel)]="User.City"><br/><br/>
+    
+    <button type="submit" value="Save" class="btn btn-success my-2" (click)="Update()">Update</button>&nbsp;&nbsp;
+    <button type="cancel" value="Save" class="btn btn-success my-2">Cancel</button>
+    </div>
+    </div>
+    </form>

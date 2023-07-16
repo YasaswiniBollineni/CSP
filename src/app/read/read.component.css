@@ -1,0 +1,25 @@
+table, th, td {
+    border: 2px solid rgb(62, 125, 241);
+    border-collapse: collapse;
+    font-weight: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  table{
+    margin-left:200px;
+  }
+  td{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;  
+    padding-bottom: 5px;
+  }
+  .par{
+    align-items:center;
+    text-align: center;
+  }
+  #p {
+    background-image: url('https://blogs.biomedcentral.com/on-medicine/wp-content/uploads/sites/6/2020/09/16.09.20blog1-620x342.jpeg');
+background-repeat: no-repeat;
+background-size: 100%; 
+
+}

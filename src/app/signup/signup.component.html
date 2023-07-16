@@ -1,0 +1,72 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+              <form #insertForm="ngForm" (ngSubmit)="Insert(insertForm)">
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+  
+  
+                    <div class="form-outline">
+                      <input type="firstname" id="firstName" class="form-control form-control-lg" name="firstname" #firstname="ngModel" ngModel required />
+                      <label class="form-label" for="firstName">First Name</label>
+                    </div>
+                    <span *ngIf="firstname.invalid && firstname.touched" style="color:red">Please Enter Ur First name</span>
+    
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <div class="form-outline">
+                      <input type="text" id="lastName" class="form-control form-control-lg" name="lastname" #lastname="ngModel" ngModel required />
+                      <label class="form-label" for="lastName">Last Name</label>
+                    </div>
+                    <span *ngIf="lastname.invalid && lastname.touched" style="color:red">Please Enter lastname</span>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4 d-flex align-items-center">
+  
+                    <div class="form-outline datepicker w-100">
+                      <input type="text" class="form-control form-control-lg" id="birthdayDate" name="dob" #dob="ngModel" ngModel required  />
+                      <label for="birthdayDate" class="form-label">DOB</label>
+                      <br/>
+                      <span *ngIf="dob.invalid && dob.touched" style="color:red">Please Enter Ur DOB</span><br/>
+                    </div>
+                  
+                  
+                  </div>
+                 
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+  
+                    <div class="form-outline">
+                      <input type="email" id="emailAddress" class="form-control form-control-lg" name="email" #email="ngModel" ngModel required/>
+                      <label class="form-label" for="emailAddress" >Email</label>
+                    <br/>
+                      <span *ngIf="email.invalid && email.touched" style="color:red">Please Enter Mail</span>
+                      <input type="password" id="password" class="form-control form-control-lg" name="password" #password="ngModel" ngModel required/>
+                      <label class="form-label" for="password" >password</label>
+                    <br/>
+                      <span *ngIf="password.invalid && password.touched" style="color:red">Please Enter password</span>
+  <br/>
+                    </div>
+  
+  
+  
+                  </div>
+                  
+             
+  
+                <div class="example-button-row">
+                
+            
+                <button mat-raised-button color="accent" class="btn btn-primary btn-lg" type="submit" [disabled]="insertForm.invalid">Submit</button>
+    </div>
+     
+    

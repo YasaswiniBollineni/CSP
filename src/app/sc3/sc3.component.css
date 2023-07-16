@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .zoom {
+    
+    
+    transition: transform .2s;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  .image-container {
+    display: flex;
+  }
+  
+  .image-container img {
+    flex: 1;
+  max-width: 75%;
+    height: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  .images-container {
+    display: flex;
+  }
+  
+  .images-container img {
+    flex: 1;
+  max-width: 50%;
+    height: auto;
+  }
